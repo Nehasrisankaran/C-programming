@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int a;
+    scanf("%d",&a);
+    int x=sqrt(a);
+    if(x*x==a)
+    {
+        printf("Yes");
+    }
+    else{
+        printf("No\n");
+    }
+    int sum=0;
+    while(a>0)
+    {
+        int v=a%10;
+        sum=sum+v;
+        a=a/10;}
+    printf("%d\n",sum);
+    int sum1=0;
+    while(sum>0)
+    {
+        int u=sum%10;
+        sum1=sum1+u;
+        sum/=10;
+    }
+    printf("%d\n",sum1);
+    if(sum1==a)
+    {
+        printf("Yes");
+    }
+    else
+    {
+        printf("no");
+    }
+        
+    }
