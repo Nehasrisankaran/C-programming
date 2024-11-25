@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char str [50];
+    char str1[50];
+    scanf("%s",str);
+    scanf("%s",str1);
+    int x=strlen(str);
+    int y=strlen(str1);
+    for(int i=0;i<y;i++)
+    {
+        str[x++]=str1[i];
+    }
+    str[x]='\0';
+    printf("%s",str);
+}
