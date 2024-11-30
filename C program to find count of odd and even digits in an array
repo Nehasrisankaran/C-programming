@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int d,r;
+    scanf("%d",&d);
+    int b=0;
+    int i=1;
+    int s=1;
+    while(d!=0)
+    {
+        r=d%2;
+        d=d/2;
+        b=b+r*i;
+        i=i*10;
+        s++;
+    }
+    printf("%d",b);
+
+}
