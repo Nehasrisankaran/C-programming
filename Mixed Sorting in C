@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int ar[a];
+    int i,j;
+    for( i=0;i<a;i++)
+    {
+        scanf("%d",&ar[i]);
+    }
+    int h=a/2;
+    for( i=0;i<h;i++)
+    {
+      for( j=i+1;j<a;j++)
+      {
+      if((ar[i]>ar[j]))
+      {
+      ar[i]=ar[i]^ar[j];
+      ar[j]=ar[i]^ar[j];
+      ar[i]=ar[i]^ar[j];
+    }
+      }
+    }
+      for( i=h;i<a;i++)
+      {
+        for(j=i+1;j<a;j++)
+        {
+          if((ar[i]<ar[j]))
+          {
+            ar[i]=ar[i]^ar[j];
+            ar[j]=ar[i]^ar[j];
+            ar[i]=ar[i]^ar[j];
+          }
+        }
+      }
+for( i=0;i<a;i++)
+{
+  printf("%d ",ar[i]);
+}
+}
