@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,v,sum;
+    scanf("%d%d",&a,&b);
+    for (int i=a ;i<=b; i++)
+    {int c=i*i;
+    int sum=0;
+    while(c>0){
+        v= c%10;
+        sum+=v;
+        c=c/10;
+    }
+    if(sum==i)
+    {
+        printf("%d ",i);
+    }
+}
+}
