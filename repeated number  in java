@@ -1,0 +1,26 @@
+//repeated number
+package NehaJava;
+import java.util.*;
+public class JavaBasics{
+public static void main(String ardgfd[]){
+		Scanner sc=new Scanner(System.in);
+		 int a=sc.nextInt();
+		int ar[]=new int[a];
+		for(int i=0;i<a;i++) {
+			ar[i]=sc.nextInt();
+		}
+		for(int i=0;i<a;i++) {
+			int c=0;
+			for(int j=i;j<a;j++) {
+			if(ar[i]==ar[j]) {
+			c++;	
+          }
+			//for(int i=0;i<a;i++) {
+			if(c>1) {
+		System.out.println(ar[i]);
+	}
+}
+		}
+}
+}
+
